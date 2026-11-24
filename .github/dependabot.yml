@@ -1,0 +1,14 @@
+# Erzeugt von GitHubSecurityManager - bei Bedarf anpassen
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directories:
+      - "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    groups:
+      github-actions-minor-patch:
+        update-types:
+          - "minor"
+          - "patch"
